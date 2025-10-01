@@ -31,4 +31,6 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_records"></a> [records](#output\_records) | Contains DNS records |
