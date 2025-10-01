@@ -1,5 +1,5 @@
 module "dns" {
-  source  = "haelekuin/cloudflare/dns"
+  source  = "haelekuin/dns/cloudflare"
   version = "~> 0.1.0"
   zone_id = "m30w"
   records = {
