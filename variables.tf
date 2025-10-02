@@ -23,5 +23,13 @@ variable "records" {
     comment  = optional(string)
     tags     = optional(list(string))
   }))
+
+  validation {
+    condition = alltrue([
+      for r in var.records :
+      !(r.proxied == true && r.ttl != 1)
+    ])
+    error_message = "If proxied is true, the TTL must be 1."
+  }
 }
 
